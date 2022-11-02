@@ -64,24 +64,21 @@ const Login = () => {
 
             <Stack pt={"20px"} spacing={5}>
               <InputGroup>
-                <InputLeftElement
-                  pointerEvents="none"
-                  children={
-                    <Text
-                      fontFamily="Outfit"
-                      fontWeight={400}
-                      fontStyle="normal"
-                      fontSize="12px"
-                      color={placeholder}
-                      bgColor={bg2}
-                      mt={-10}
-                      ml={14}
-                      padding={"5px"}
-                    >
-                      Your&nbsp;email
-                    </Text>
-                  }
-                />
+                <InputLeftElement pointerEvents="none">
+                  <Text
+                    fontFamily="Outfit"
+                    fontWeight={400}
+                    fontStyle="normal"
+                    fontSize="12px"
+                    color={placeholder}
+                    bgColor={bg2}
+                    mt={-10}
+                    ml={14}
+                    padding={"5px"}
+                  >
+                    Your&nbsp;email
+                  </Text>
+                </InputLeftElement>
                 <Input
                   borderRadius="10px"
                   height="58px"
@@ -90,24 +87,21 @@ const Login = () => {
                 />
               </InputGroup>
               <InputGroup>
-                <InputLeftElement
-                  pointerEvents="none"
-                  children={
-                    <Text
-                      fontFamily="Outfit"
-                      fontWeight={400}
-                      fontStyle="normal"
-                      fontSize="12px"
-                      color={placeholder}
-                      bgColor={bg2}
-                      mt={-10}
-                      ml={14}
-                      padding={"5px"}
-                    >
-                      Password
-                    </Text>
-                  }
-                />
+                <InputLeftElement pointerEvents="none">
+                  <Text
+                    fontFamily="Outfit"
+                    fontWeight={400}
+                    fontStyle="normal"
+                    fontSize="12px"
+                    color={placeholder}
+                    bgColor={bg2}
+                    mt={-10}
+                    ml={14}
+                    padding={"5px"}
+                  >
+                    Password
+                  </Text>
+                </InputLeftElement>
                 <Input
                   borderRadius="10px"
                   height="58px"
@@ -115,20 +109,16 @@ const Login = () => {
                   border="1.5px solid #B1B0B0"
                   width="355px"
                 />
-                <InputRightElement
-                  mt="9px"
-                  onClick={() => setShow(!show)}
-                  children={
-                    show ? (
-                      <AiOutlineEye size={23} />
-                    ) : (
-                      <AiOutlineEyeInvisible size={23} />
-                    )
-                  }
-                />
+                <InputRightElement mt="9px" onClick={() => setShow(!show)}>
+                  {show ? (
+                    <AiOutlineEye size={23} />
+                  ) : (
+                    <AiOutlineEyeInvisible size={23} />
+                  )}
+                </InputRightElement>
               </InputGroup>
 
-              <Link href='/forgot-password'>
+              <Link href="/forgot-password">
                 <Outfit
                   props={{
                     fontSize: "12px",
@@ -145,7 +135,7 @@ const Login = () => {
                 width="355px"
                 others={{
                   borderRadius: 8,
-                  onClick: () => router.push('/dashboard')
+                  onClick: () => router.push("/dashboard"),
                 }}
               >
                 Sign in

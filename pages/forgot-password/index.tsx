@@ -37,7 +37,7 @@ const ForgotPassword = () => {
             fontFamily="Sora"
             fontWeight={600}
             fontSize="24px"
-            pb={'15px'}
+            pb={"15px"}
             color={black}
           >
             Forgot Password
@@ -57,24 +57,21 @@ const ForgotPassword = () => {
 
           <Stack pt={"20px"} spacing={5}>
             <InputGroup>
-              <InputLeftElement
-                pointerEvents="none"
-                children={
-                  <Text
-                    fontFamily="Outfit"
-                    fontWeight={400}
-                    fontStyle="normal"
-                    fontSize="12px"
-                    color={placeholder}
-                    bgColor={bg2}
-                    mt={-10}
-                    ml={14}
-                    padding={"5px"}
-                  >
-                    Your&nbsp;email
-                  </Text>
-                }
-              />
+              <InputLeftElement pointerEvents="none">
+                <Text
+                  fontFamily="Outfit"
+                  fontWeight={400}
+                  fontStyle="normal"
+                  fontSize="12px"
+                  color={placeholder}
+                  bgColor={bg2}
+                  mt={-10}
+                  ml={14}
+                  padding={"5px"}
+                >
+                  Your&nbsp;email
+                </Text>
+              </InputLeftElement>
               <Input
                 borderRadius="10px"
                 height="58px"
