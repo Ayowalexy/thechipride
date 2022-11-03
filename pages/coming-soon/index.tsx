@@ -30,7 +30,7 @@ const ComingSoon = () => {
               pt: "30px",
             }}
           >
-            WE'RE COMING SOON
+            WE&apos;RE COMING SOON
           </Outfit>
 
           <Box width="500px" border="1px solid #000" mt={"80px"} />
@@ -44,7 +44,7 @@ const ComingSoon = () => {
               lineHeight: "20px",
             }}
           >
-            We're coming soon. We're working <br />
+            We&apos;re coming soon. We&apos;re working <br />
             To give you the best of experience
           </Outfit>
 
