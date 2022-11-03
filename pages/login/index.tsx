@@ -38,7 +38,7 @@ const Login = () => {
             justify="center"
             align="center"
             height="653.06px"
-            boxShadow="0px 2px 20px 16px #DFDCFF;"
+            boxShadow="0px 2px 20px 16px rgba(223, 220, 255, 0.3);"
             borderRadius={15}
             backgroundColor={bg2}
           >

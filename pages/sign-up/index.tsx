@@ -40,7 +40,7 @@ const Login = () => {
             height="fit-content"
             pt={"50px"}
             pb={"30px"}
-            boxShadow="0px 2px 20px 16px #DFDCFF;"
+            boxShadow="0px 2px 20px 16px rgba(223, 220, 255, 0.3)"
             borderRadius={15}
             backgroundColor={bg2}
           >

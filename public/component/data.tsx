@@ -374,3 +374,152 @@ export const users = [
   },
 
 ]
+
+
+export const userData = [
+  {
+    rideId: "#12345",
+    rideDate: "May 4,2022. 12:30pm",
+    driverID: "ABCD1234",
+    price: "₦20,000",
+    status: "Completed",
+  },
+  {
+    rideId: "#12345",
+    rideDate: "May 4,2022. 12:30pm",
+    driverID: "ABCD1234",
+    price: "₦20,000",
+    status: "Completed",
+  },
+  {
+    rideId: "#12345",
+    rideDate: "May 4,2022. 12:30pm",
+    driverID: "---",
+    price: "---",
+    status: "Ongoing",
+  },
+  {
+    rideId: "#12345",
+    rideDate: "May 4,2022. 12:30pm",
+    driverID: "---",
+    price: "---",
+    status: "Ongoing",
+  },
+  {
+    rideId: "#12345",
+    rideDate: "May 4,2022. 12:30pm",
+    driverID: "---",
+    price: "---",
+    status: "Ongoing",
+  },
+  {
+    rideId: "#12345",
+    rideDate: "May 4,2022. 12:30pm",
+    driverID: "---",
+    price: "---",
+    status: "Cancelled",
+  },
+  {
+    rideId: "#12345",
+    rideDate: "May 4,2022. 12:30pm",
+    driverID: "---",
+    price: "---",
+    status: "Cancelled",
+  },
+];
+
+
+
+export const driverData = [
+  {
+    rideId: "#12345",
+    rideDate: "May 4,2022. 12:30pm",
+    driverID: "ABCD1234",
+    price: "₦20,000",
+    status: "Completed",
+  },
+  {
+    rideId: "#12345",
+    rideDate: "May 4,2022. 12:30pm",
+    driverID: "ABCD1234",
+    price: "₦20,000",
+    status: "Completed",
+  },
+  {
+    rideId: "#12345",
+    rideDate: "May 4,2022. 12:30pm",
+    driverID: "ABCD1234",
+    price: "₦20,000",
+    status: "Completed",
+  },
+  {
+    rideId: "#12345",
+    rideDate: "May 4,2022. 12:30pm",
+    driverID: "---",
+    price: "---",
+    status: "Online",
+  },
+  {
+    rideId: "#12345",
+    rideDate: "May 4,2022. 12:30pm",
+    driverID: "---",
+    price: "---",
+    status: "Online",
+  },
+  {
+    rideId: "#12345",
+    rideDate: "May 4,2022. 12:30pm",
+    driverID: "---",
+    price: "---",
+    status: "Online",
+  },
+  {
+    rideId: "#12345",
+    rideDate: "May 4,2022. 12:30pm",
+    driverID: "---",
+    price: "---",
+    status: "Cancelled",
+  },
+];
+
+
+export const ratingData = [
+  {
+    userId: "#12345",
+    listingdate: "May 4,2022. 12:30pm",
+    listingid: "ABCD1234",
+    rating: "4.1",
+  },
+  {
+    userId: "#12345",
+    listingdate: "May 4,2022. 12:30pm",
+    listingid: "ABCD1234",
+    rating: "4.1",
+  },{
+    userId: "#12345",
+    listingdate: "May 4,2022. 12:30pm",
+    listingid: "ABCD1234",
+    rating: "4.1",
+  },{
+    userId: "#12345",
+    listingdate: "May 4,2022. 12:30pm",
+    listingid: "ABCD1234",
+    rating: "4.1",
+  },{
+    userId: "#12345",
+    listingdate: "May 4,2022. 12:30pm",
+    listingid: "ABCD1234",
+    rating: "4.1",
+  },{
+    userId: "#12345",
+    listingdate: "May 4,2022. 12:30pm",
+    listingid: "ABCD1234",
+    rating: "4.1",
+  },{
+    userId: "#12345",
+    listingdate: "May 4,2022. 12:30pm",
+    listingid: "ABCD1234",
+    rating: "4.1",
+  }
+
+]

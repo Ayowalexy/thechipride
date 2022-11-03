@@ -15,6 +15,7 @@ import UserCard from "../../public/component/userCard";
 import { users } from "../../public/component/data";
 import { useState, useEffect, ChangeEvent } from "react";
 import { userProps } from "../../public/component/types";
+import { useRouter } from "next/router";
 import UnapprovedUserCard from "../../public/component/unapprovedusercard";
 
 const Users = () => {
@@ -22,22 +23,22 @@ const Users = () => {
   const [data, setData] = useState<userProps[]>(users);
   const [type, setType] = useState<string>("");
   const { black, white } = theme.colors.brand;
+  const router = useRouter();
 
   const filterFunction = (element: string) => {
-    const res = users.filter(user => user.type === element)
-    setData(res)
-  }
+    const res = users.filter((user) => user.type === element);
+    setData(res);
+  };
 
   const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const value = e?.target.value;
     setType(value);
     filterFunction(value);
-  }
-
+  };
 
   useEffect(() => {
-    filterFunction('User')
-  }, [])
+    filterFunction("User");
+  }, []);
 
   return (
     <Layout>
@@ -57,7 +58,7 @@ const Users = () => {
           align="flex-end"
           justify="space-between"
           width="100%"
-          boxShadow="0px 2px 20px 16px #DFDCFF"
+          boxShadow="0px 2px 20px 16px rgba(223, 220, 255, 0.3)"
           borderRadius="15px"
           padding="15px"
           backgroundColor={white}
@@ -81,7 +82,6 @@ const Users = () => {
               <option value="User">Client</option>
               <option value="Driver">Driver</option>
               <option value="Lister">Lister</option>
-
             </Select>
           </VStack>
 
@@ -145,11 +145,7 @@ const Users = () => {
           </MotionFlex>
         </HStack>
 
-        <Flex
-            align='center'
-            justify='center'
-            width={"100%"}
-        >
+        <Flex align="center" justify="center" width={"100%"}>
           <Flex
             width={"100%"}
             flexWrap="wrap"
@@ -157,18 +153,15 @@ const Users = () => {
             justify="space-between"
             // pt={"40px"}
           >
-            {
-                data.map((element, idx) => (
-                    <>
-                        {
-                            type === 'Lister'
-                            ? <UnapprovedUserCard key={idx} data={element} />
-                            :  <UserCard key={idx} data={element} />
-                        }
-                    </>
-                ))
-            }
-            
+            {data.map((element, idx) => (
+              <>
+                {type === "Lister" ? (
+                    <UnapprovedUserCard key={idx} data={element} />
+                ) : (
+                    <UserCard key={idx} data={element} />
+                )}
+              </>
+            ))}
           </Flex>
         </Flex>
       </Box>

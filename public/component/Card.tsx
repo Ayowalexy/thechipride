@@ -30,7 +30,7 @@ const Card = ({title, value, color}: cardProps) => {
           fontSize="16px"
           lineHeight="18px"
           color="#575A74"
-          fontFamily="Ambit"
+          fontFamily="Ambit, Outfit"
         >
           {title}
         </Text>

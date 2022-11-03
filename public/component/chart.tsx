@@ -8,13 +8,41 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { Margin } from "recharts/types/util/types";
-import {data} from './data'
+import { data } from "./data";
+
+const CustomizedAxisTick = (props: any) => {
+
+      const { x, y, stroke, payload } = props;
+  
+      return (
+        <g transform={`translate(${x},${y})`}>
+        <text x={0} y={0} dy={16} textAnchor="end" fill="#000" fontFamily="Ambit" fontWeight={600} fontSize='13px'>
+          {Number(payload.value === 0) ? null : payload.value + '00k'}
+        </text>
+      </g>
+      );
+    
+  }
+
+  const CustomizedYAxisTick = (props: any) => {
+
+    const { x, y, stroke, payload } = props;
+
+    return (
+      <g transform={`translate(${x},${y})`}>
+      <text x={0} y={0} dy={16} textAnchor="end" fill="#000" fontFamily="Ambit" fontWeight={600} fontSize='13px'>
+        {payload.value}
+      </text>
+    </g>
+    );
+  
+}
 
 const Chart = () => {
   return (
-    <ResponsiveContainer width={'100%'} height={180}>
+    <ResponsiveContainer width={"100%"} height={180}>
       <AreaChart
-        margin={{ top: 20, right: 0, left: -35, bottom: 0 }}
+        margin={{ top: 20, right: 0, left: -15, bottom: 0 }}
         data={data}
       >
         <defs>
@@ -24,20 +52,25 @@ const Chart = () => {
           </linearGradient>
         </defs>
         <XAxis
+          axisLine={false}
+          opacity={1}
+          tickLine={false}
+          fontWeight={600}
+          tick={<CustomizedYAxisTick />}
+          fontFamily=" 'Ambit', sans-serif"
+          dataKey="name"
+          color={"#000"}
+          display={"block"}
+        />
+        <YAxis
+          tickLine={false}
+          axisLine={false}
+          tick={<CustomizedAxisTick />}
           opacity={1}
           fontWeight={600}
           fontFamily=" 'Ambit', sans-serif"
-          dataKey="name"
-          color={'#000'}
-          display={"block"}
+          color={"#000"}
         />
-        <YAxis 
-         opacity={1}
-         fontWeight={600}
-         fontFamily=" 'Ambit', sans-serif"
-         color={'#000'}
-        />
-        {/* <CartesianGrid strokeDasharray="10" vertical={false} /> */}
         <Tooltip />
         <Area
           type="monotone"
@@ -52,5 +85,4 @@ const Chart = () => {
   );
 };
 
-
-export default Chart
+export default Chart;

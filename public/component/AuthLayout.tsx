@@ -37,9 +37,8 @@ export const AuthLayout = ({ type, children }: layoutProps): JSX.Element => {
             color={"#fff"}
             fontSize={"25px"}
             fontWeight={600}
-            //   pl={'20px'}
             lineHeight={"30px"}
-            fontFamily="Ambit"
+            fontFamily="Outfit"
             textAlign="center"
             pt={"120px"}
           >
@@ -53,7 +52,7 @@ export const AuthLayout = ({ type, children }: layoutProps): JSX.Element => {
             fontWeight={600}
             //   pl={'20px'}
             lineHeight={"30px"}
-            fontFamily="Ambit"
+            fontFamily="Outfit"
             textAlign="center"
             pt={"120px"}
           >
@@ -70,7 +69,7 @@ export const AuthLayout = ({ type, children }: layoutProps): JSX.Element => {
             fontWeight={600}
             //   pl={'20px'}
             lineHeight={"30px"}
-            fontFamily="Ambit"
+            fontFamily="Outfit"
             textAlign="center"
             pt={"40px"}
           >

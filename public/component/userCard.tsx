@@ -14,6 +14,7 @@ import { AiFillStar } from "react-icons/ai";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
 import { BsTelephoneOutboundFill } from "react-icons/bs";
+import { useRouter } from "next/router";
 import { userProps } from "./types";
 
 type userCardProps = {
@@ -24,15 +25,18 @@ type userCardProps = {
 const UserCard = ({data}: userCardProps): JSX.Element => {
   const theme = useTheme();
   const { black, white, bg1, error } = theme.colors.brand;
+  const router = useRouter();
 
   return (
     <MotionBox
-      boxShadow="0px 2px 20px 16px #DFDCFF"
+      boxShadow="0px 2px 20px 16px rgba(223, 220, 255, 0.3)"
       width="23%"
       height="296px"
       padding="20px 10px"
       borderRadius="15px"
+      cursor='pointer'
       mt={'30px'}
+      onClick={() => router.push(`${data.type === 'Driver' ? '/driver/1' : '/users/1'}`)}
       backgroundColor={white}
     >
       <HStack justify="space-between" align="flex-start">

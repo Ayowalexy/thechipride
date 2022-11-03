@@ -24,7 +24,7 @@ const ForgotPassword = () => {
       <Flex height="80%" width="100%" justify="center" align="flex-start">
         <Flex
           width="536px"
-          boxShadow="0px 2px 20px 16px #DFDCFF"
+          boxShadow="0px 2px 20px 16px rgba(223, 220, 255, 0.3)"
           height="418px"
           flexDir="column"
           backgroundColor={white}

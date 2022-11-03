@@ -20,26 +20,26 @@ export const Navigation = [
     {
         title: 'Payments',
         icon: BiMoney,
-        path: '/dashboard'
+        path: '/coming-soon'
     },
     {
         title: 'Ratings',
         icon: FaPenSquare,
-        path: '/dashboard'
+        path: '/rating'
     },
     {
         title: 'Divider',
-        path: '/dashboard'
+        path: '/coming-soon'
 
     },
     {
         title: 'Cancellations',
         icon: BsFillBookmarkXFill,
-        path: '/dashboard'
+        path: '/coming-soon'
     },
     {
         title: 'Settings',
         icon: AiTwotoneSetting,
-        path: '/dashboard'
+        path: '/coming-soon'
     },
 ]

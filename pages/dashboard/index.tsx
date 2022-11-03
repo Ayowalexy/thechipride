@@ -35,7 +35,7 @@ const Dashboard = () => {
           <MotionBox
             height="238px"
             background={white}
-            boxShadow="0px 2px 20px 35px #DFDCFF"
+            boxShadow="0px 2px 20px 35px rgba(223, 220, 255, 0.3)"
             borderRadius="15px"
             width="48%"
             padding="15px"
@@ -63,11 +63,10 @@ const Dashboard = () => {
             </HStack>
             <Chart />
           </MotionBox>
-
           <MotionBox
             height="238px"
             background={white}
-            boxShadow="0px 2px 20px 35px #DFDCFF"
+            boxShadow="0px 2px 20px 35px rgba(223, 220, 255, 0.3)"
             borderRadius="15px"
             width="48%"
             padding="15px"
@@ -89,7 +88,7 @@ const Dashboard = () => {
           <MotionBox
             height="376px"
             background={white}
-            boxShadow="0px 2px 20px 30px #DFDCFF"
+            boxShadow="0px 2px 20px 30px rgba(223, 220, 255, 0.3)"
             borderRadius="15px"
             width="26%"
             padding="15px"
@@ -109,7 +108,7 @@ const Dashboard = () => {
           <MotionBox
             height="376px"
             background={white}
-            boxShadow="0px 2px 20px 30px #DFDCFF"
+            boxShadow="0px 2px 20px 30px rgba(223, 220, 255, 0.3)"
             borderRadius="15px"
             width="69%"
           >

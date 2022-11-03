@@ -11,6 +11,7 @@ import {
   Image,
   Divider,
 } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import { userProps } from "./types";
 
 type cardProps = {
@@ -20,6 +21,9 @@ type cardProps = {
 const UnapprovedUserCard = ({ data }: cardProps): JSX.Element => {
   const theme = useTheme();
   const { black, white, error } = theme.colors.brand;
+  const router = useRouter();
+
+
   return (
     <MotionBox
       width="23%"
@@ -28,6 +32,8 @@ const UnapprovedUserCard = ({ data }: cardProps): JSX.Element => {
       height="fit-content"
       padding="20px 10px"
       mt={"30px"}
+      cursor='pointer'
+      onClick={() => router.push("/driver/1")}
     >
       <HStack>
         <Image src="/images/pngs/img6.png" />
